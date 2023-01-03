@@ -254,7 +254,7 @@ eligible for flight recognition</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
       <dmn:contextEntry>
-        <dmn:variable id="_BCD6E97D-CE11-42A2-A15C-BA9AE14E54CD" name="PriorityFunction" typeRef="Any"/>
+        <dmn:variable id="_BCD6E97D-CE11-42A2-A15C-BA9AE14E54CD" name="getPassengerPriority" typeRef="number"/>
         <dmn:functionDefinition id="_754339B0-B9F6-4AA9-A133-5E25BBAFB10E" kind="FEEL">
           <dmn:formalParameter id="_81793000-7DAA-42DB-AF26-AECC667F9BAB" name="passenger" typeRef="passenger"/>
           <dmn:decisionTable id="_753BD02E-CD2D-4543-9666-C19AF35A4129" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
@@ -293,7 +293,7 @@ eligible for flight recognition</dmn:text>
       <dmn:contextEntry>
         <dmn:literalExpression id="_E40856D2-6CB9-4896-8C76-44023802EF72">
           <dmn:text>for p in Flight.passengers
-    return context put(p, "priority", PriorityFunction(p))</dmn:text>
+    return context put(p, "priority", getPassengerPriority(p))</dmn:text>
         </dmn:literalExpression>
       </dmn:contextEntry>
     </dmn:context>
@@ -351,23 +351,23 @@ eligible for flight recognition</dmn:text>
           <kie:ComponentWidths dmnElementRef="_B47ADD8D-5B84-46C5-BF0F-DFE467B9B89F">
             <kie:width>50</kie:width>
             <kie:width>173</kie:width>
-            <kie:width>1512</kie:width>
+            <kie:width>609</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_6E3626F1-3C47-4BF8-8758-2FA6D7E612EE">
-            <kie:width>1512</kie:width>
+            <kie:width>609</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_754339B0-B9F6-4AA9-A133-5E25BBAFB10E">
             <kie:width>50</kie:width>
-            <kie:width>1442</kie:width>
+            <kie:width>539</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_753BD02E-CD2D-4543-9666-C19AF35A4129">
             <kie:width>50</kie:width>
             <kie:width>201</kie:width>
-            <kie:width>369</kie:width>
-            <kie:width>802</kie:width>
+            <kie:width>168</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_E40856D2-6CB9-4896-8C76-44023802EF72">
-            <kie:width>1512</kie:width>
+            <kie:width>609</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
