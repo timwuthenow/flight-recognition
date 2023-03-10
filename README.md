@@ -32,7 +32,8 @@ Sample JSON script
         ],
         "distance": 200
       }
-    }'~~~
+    }'
+~~~
 
 ## Running the application in dev mode
 
